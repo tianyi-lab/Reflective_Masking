@@ -64,7 +64,7 @@ reveal, correct → keep.
 
 - **Wrong tokens:** corrupt a fraction of answer tokens, sampling each replacement from the
   frozen base model's top-`k` predictions (plausible, model-confusable errors).
-- **History:** a short trajectory of successively-revised states; for a sample at step `t`,
+- **History:** trajectory of successively-revised states; for a sample at step `t`,
   the earlier states are fed back as history.
 
 ### Usage
@@ -132,11 +132,12 @@ Pass `--help` to each entry point for the full argument list.
 
 ```bibtex
 @misc{zhang2026multiturn,
-  title={Multi-Turn Reflective Masking Elicits Reasoning in Mask Diffusion Models},
-  author={Zhang, Yanming and Bian, Yihan and Qi, Jingyuan and Yao, Yuguang and Huang, Lifu and Zhou, Tianyi},
-  year={2026},
-  eprint={2606.16700},
-  archivePrefix={arXiv}
+  title         = {Multi-Turn Reflective Masking Elicits Reasoning in Mask Diffusion Models},
+  author        = {Zhang, Yanming and Bian, Yihan and Qi, Jingyuan and Yao, Yuguang and Huang, Lifu and Zhou, Tianyi},
+  year          = {2026},
+  eprint        = {2606.16700},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2606.16700}
 }
 ```
 

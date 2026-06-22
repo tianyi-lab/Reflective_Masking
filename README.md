@@ -24,9 +24,7 @@ Two independent parts:
 - `text/`: math reasoning on the LLaDA-8B-Instruct backbone.
 
 Both build a synthetic revision *trajectory* offline and SFT the model to predict the
-per-token action at a sampled step. The `text/` model additionally uses HR (earlier steps are
-fed back in). The released `image/` model is trained RM-only — the HR code is present but was
-disabled (history weight 0) for these results.
+per-token action at a sampled step.
 
 ## Release status
 - [√] **Training/Inference Code**
@@ -105,8 +103,7 @@ frame `T`) plus `prefix_len` and `image_hw`.
 
 Each intermediate frame of that trajectory mixes correct tokens, wrong tokens (differ from the
 target), and `[MASK]`. Training samples a step `t` and derives the per-token action labels
-against the target frame. (The image model is trained RM-only; the HR history-injection code
-ships but was disabled — `--temporal-history-scale 0` — for the released results.)
+against the target frame. (The image model is trained on RM)
 
 ### Usage
 

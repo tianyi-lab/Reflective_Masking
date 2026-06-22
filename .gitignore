@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Local editor / tooling
+.claude/
+.vscode/
+.idea/
+.DS_Store
+
+# Checkpoints, datasets and run outputs (bring your own; not part of the release)
+CKPT/
+image/CKPT/
+image/DATA/
+text/CKPT/
+text/data/
+output/
+results_temporal_mask_then_unmask/
+wandb/
+*.ckpt
+*.pt
